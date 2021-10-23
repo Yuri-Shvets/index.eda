@@ -1,0 +1,266 @@
+:root {
+    --swiper-theme-color: #F66A15;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+._container {
+    max-width: 1204px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.button-primary {
+    background-color: #F47322;
+    color: #FFF;
+}
+.button-default {
+    background-color: #fff;
+    color: #5F5F61;
+}
+.button {
+    padding: 12px 50px;
+    display: inline-block;
+    border-radius: 25px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+
+/*HEADER START==================================================================================*/
+.header__wrap {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 128px;
+}
+
+.search-form {
+    max-width: 620px;
+
+    margin-left: 76px;
+
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    position: relative;
+
+    background: rgba(238, 238, 238, 0.71);
+    border-radius: 10px;
+}
+
+.search-input {
+    width: 100%;
+
+    padding: 13px 50px 13px 20px;
+
+    background-color: transparent;
+    border: none;
+}
+
+.search-button {
+    height: 100%;
+    padding: 0 18px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.auth {
+    margin-left: auto;
+}
+
+.login {
+    display: block;
+    padding: 16px 30px;
+    background: #EBEBEB;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.shopping-cart {
+    position: relative;
+    width: 49px;
+    height: 49px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #F66A15;
+}
+
+.shopping-counter {
+    padding: 5px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #FFAF19;
+    border-radius: 50%;
+    color: #000;
+    line-height: 9px;
+    font-size: 8px;
+    text-decoration: none;
+}
+
+/*HEADER END==================================================================================*/
+/*SLIDER START==================================================================================*/
+.slider {
+    position: relative;
+}
+.slide {
+    min-height: 400px;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.slide-text-light {
+    background-color: #646363;
+    color: #ffffff;
+}
+
+.slide-content {
+    max-width: 400px;
+}
+
+.slide-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 51px;
+}
+
+.slide-text {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.slide-summer {
+    position: relative;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%)
+}
+.slide-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.swiper-button-prev, .swiper-button-next {
+    width: 24px;
+    height: 24px;
+    padding: 40px;
+    background: rgba(235, 235, 235, 0.7);
+    border-radius: 50%;
+}
+.swiper-button-prev {
+    position: absolute;
+    top: 330px;
+    left: 950px;
+}
+.swiper-button-next {
+    position: absolute;
+    top: 330px;
+    right: 50px;
+}
+
+/*SLIDER END==================================================================================*/
+/*PROMO START==================================================================================*/
+.promo {
+    margin-top: 50px;
+    margin-bottom: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex-basis: 100%;
+    position: relative;
+    max-width: 570px;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+.card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.cart-text-light {
+    color: #ffffff;
+}
+
+.card-title {
+    margin: 4px 0 21px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+}
+
+.cart-description {
+    max-width: 200px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.card-price {
+    display: block;
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 23px;
+}
+.card-price span {
+    font-size: 24px;
+}
+.card-delivery {
+    display: block;
+    margin-bottom: 25px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+}
+/*PROMO END==================================================================================*/
